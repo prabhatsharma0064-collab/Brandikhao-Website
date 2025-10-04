@@ -1,0 +1,71 @@
+.faq {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: left;
+}
+.icon {
+    color: #0073e6; /* subtle professional blue */
+}
+.faq-item button {
+  background-color: #f5f7fa; /* light button */
+  color: #1f2937;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.faq-item.active {
+  background: #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.faq-question .icon {
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.faq-answer {
+  background-color: #1f2937; /* dark answer card */
+  color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px; /* enough for text */
+  padding: 15px 20px;
+}
