@@ -1,0 +1,154 @@
+/* ==========================
+   Customer Review Section
+========================== */
+.review-section {
+  background-color: #f5f7fa; /* light section */
+  padding: 60px 10%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.review-section h2 {
+  font-size: 28px;
+  color: #8b2c1e;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Layout */
+.review-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* ==========================
+   Left Side - Review Cards
+========================== */
+.review-display {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-card {
+  background-color: #1f2937; /* dark card */
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  transition: transform 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.review-text {
+  text-align: left;
+  
+}
+
+.review-text h3 {
+  margin: 0;
+  color: #8b2c1e;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.review-text p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.stars {
+  color: #ffbf00;
+  font-size: 16px;
+}
+
+/* ==========================
+   Right Side - Feedback Form
+========================== */
+.review-form {
+    background-color: #fff; /* slightly light form */
+  color: #333;
+  flex: 1 1 40%;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-form h3 {
+  color: #8b2c1e;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.review-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review-form input,
+.review-form textarea,
+.review-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  transition: border 0.2s;
+}
+
+.review-form input:focus,
+.review-form textarea:focus,
+.review-form select:focus {
+  border-color: #8b2c1e;
+  outline: none;
+}
+
+.review-form button {
+  background: #8b2c1e;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.review-form button:hover {
+  background: #a83222;
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+@media (max-width: 900px) {
+  .review-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-display,
+  .review-form {
+    width: 100%;
+  }
+}

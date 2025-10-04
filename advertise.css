@@ -1,0 +1,47 @@
+.offline-advertising {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.offline-advertising .content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  padding-top: 900px; 
+  
+}
+
+.offline-advertising .content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: none;
+  gap: 20px;
+  
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.card .icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: block;
+}

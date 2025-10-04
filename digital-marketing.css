@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ font-family: 'Arial', sans-serif;
+  background-color: #fdecec;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Section Layout */
+.transit-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* Left Content */
+.content {
+  flex: 1;
+}
+
+.content h1 {
+  font-size: 60px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  background: #3c2cc3;
+  color: #fff;
+  padding: 12px 55px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  display: inline-block;
+  background: #4CAF50;
+  color: white;
+  padding: 10px 18px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 30%;
+}
+
+.contact-btn:hover {
+  background: #388e3c;
+}
+
+/* Sub-heading */
+.content h2 {
+  font-size: 24px;
+  margin: 0px 0 10px;
+  color: #444;
+}
+
+/* Right Image */
+.image-box {
+  flex: 1;
+  text-align: center;
+}
+
+.image-box img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+p{
+    font-size: 40px;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Section Title */
+.services-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+/* Grid Layout */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* Card Design */
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Images */
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Titles */
+.service-card h3 {
+  font-size: 20px;
+  color: #8b2c1e;
+  margin-bottom: 10px;
+}
+
+/* Bullet List */
+.service-card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.service-card ul li {
+  margin-bottom: 6px;
+}
+
+
+/* ---------------- Body & Global ---------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Section Titles */
+h2 {
+  font-size: 24px;
+  color: #8b2c1e;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Optional underline effect for titles */
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #8b2c1e;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ---------------- Benefits Section ---------------- */
+.benefit{
+    padding-top: 50px;
+}
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.benefit-card {
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ---------------- Why Choose Section ---------------- */
+.why-choose {
+  background-color: #fff;
+  padding: 75px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.choose-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.choose-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  min-width: 150px;
+}
+
+.choose-item .icon {
+  font-size: 24px;
+  color: #8b2c1e;
+}
+
+/* ---------------- Process Section ---------------- */
+.process-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.step-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #8b2c1e;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (min-width: 768px) {
+  .process-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .choose-items {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
